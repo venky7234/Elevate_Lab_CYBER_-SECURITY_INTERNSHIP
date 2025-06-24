@@ -14,3 +14,5 @@ This task demonstrates basic network reconnaissance using **Nmap** on a local ne
 Saved scan results:
 
 As .txt: -oN results.txt
+
+![image](https://github.com/user-attachments/assets/a11e6930-1d02-435e-83fb-99f292a762bc)
