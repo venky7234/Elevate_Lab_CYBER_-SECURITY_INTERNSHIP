@@ -40,3 +40,20 @@ As .txt: -oN results.txt
 
 7. **Grammar & Spelling Check**  
    No errors found; well-written content.
+
+#DAY-3
+This task involves performing a vulnerability scan on my own Linux system using Nessus Essentials to identify potential security issues.
+
+Installed and configured Nessus Essentials on Kali Linux.
+
+Set the scan target as 127.0.0.1 (localhost).
+
+Launched a full system vulnerability scan.
+
+Waited for the scan to complete (~45 minutes).
+
+Reviewed the report and noted vulnerabilities by severity.
+
+Researched and documented simple fixes for the most critical issues.
+
+Captured screenshots of key scan results and exported the report in csv format.
