@@ -1,0 +1,110 @@
+Plugin ID,CVE,CVSS v2.0 Base Score,Risk,Host,Protocol,Port,Name,Synopsis,Description,Solution,See Also,Plugin Output
+"10287","","","None","sunstone.in","udp","0","Traceroute Information","It was possible to obtain traceroute information.","Makes a traceroute to the remote host.","n/a","","For your information, here is the traceroute from 192.168.30.134 to 76.76.21.21 : 
+192.168.30.134
+192.168.30.2
+76.76.21.21
+
+Hop Count: 2
+"
+"11219","","","None","sunstone.in","tcp","80","Nessus SYN scanner","It is possible to determine which TCP ports are open.","This plugin is a SYN 'half-open' port scanner.  It shall be reasonably
+quick even against a firewalled target. 
+
+Note that SYN scans are less intrusive than TCP (full connect) scans
+against broken services, but they might cause problems for less robust
+firewalls and also leave unclosed connections on the remote target, if
+the network is loaded.","Protect your target with an IP filter.","","Port 80/tcp was found to be open"
+"11219","","","None","sunstone.in","tcp","443","Nessus SYN scanner","It is possible to determine which TCP ports are open.","This plugin is a SYN 'half-open' port scanner.  It shall be reasonably
+quick even against a firewalled target. 
+
+Note that SYN scans are less intrusive than TCP (full connect) scans
+against broken services, but they might cause problems for less robust
+firewalls and also leave unclosed connections on the remote target, if
+the network is loaded.","Protect your target with an IP filter.","","Port 443/tcp was found to be open"
+"19506","","","None","sunstone.in","tcp","0","Nessus Scan Information","This plugin displays information about the Nessus scan.","This plugin displays, for each tested host, information about the
+scan itself :
+
+  - The version of the plugin set.
+  - The type of scanner (Nessus or Nessus Home).
+  - The version of the Nessus Engine.
+  - The port scanner(s) used.
+  - The port range scanned.
+  - The ping round trip time 
+  - Whether credentialed or third-party patch management
+    checks are possible.
+  - Whether the display of superseded patches is enabled
+  - The date of the scan.
+  - The duration of the scan.
+  - The number of hosts scanned in parallel.
+  - The number of checks done in parallel.","n/a","","Information about this scan : 
+
+Nessus version : 10.8.4
+Nessus build : 20028
+Plugin feed version : 202506251821
+Scanner edition used : Nessus Home
+Scanner OS : LINUX
+Scanner distribution : ubuntu1604-x86-64
+Scan type : Normal
+Scan name : sunstone 
+Scan policy used : Basic Network Scan
+Scanner IP : 192.168.30.134
+Port scanner(s) : nessus_syn_scanner 
+Port range : default
+Ping RTT : 52.617 ms
+Thorough tests : no
+Experimental tests : no
+Scan for Unpatched Vulnerabilities : no
+Plugin debugging enabled : no
+Paranoia level : 1
+Report verbosity : 1
+Safe checks : yes
+Optimize the test : yes
+Credentialed checks : no
+Patch management checks : None
+Display superseded patches : yes (supersedence plugin did not launch)
+CGI scanning : disabled
+Web application tests : disabled
+Max hosts : 30
+Max checks : 4
+Recv timeout : 5
+Backports : None
+Allow post-scan editing : Yes
+Nessus Plugin Signature Checking : Enabled
+Audit File Signature Checking : Disabled
+Scan Start Date : 2025/6/26 2:48 EDT (UTC -04:00)
+Scan duration : 615 sec
+Scan for malware : no
+"
+"46215","","","None","sunstone.in","tcp","0","Inconsistent Hostname and IP Address","The remote host's hostname is not consistent with DNS information.","The name of this machine either does not resolve or resolves to a
+different IP address. 
+
+This may come from a badly configured reverse DNS or from a host file
+in use on the Nessus scanning host. 
+
+As a result, URLs in plugin output may not be directly usable in a web
+browser and some web tests may be incomplete.","Fix the reverse DNS or host file.","","The host name 'sunstone.in' does not resolve to an IP address"
+"50350","","","None","sunstone.in","tcp","0","OS Identification Failed","It was not possible to determine the remote operating system.","Using a combination of remote probes (TCP/IP, SMB, HTTP, NTP, SNMP,
+etc), it was possible to gather one or more fingerprints from the
+remote system. Unfortunately, though, Nessus does not currently know
+how to use them to identify the overall system.","n/a","","
+If you think that these signatures would help us improve OS fingerprinting,
+please submit them by visiting https://www.tenable.com/research/submitsignatures.
+
+SinFP:!:
+   P1:B11013:F0x12:W64240:O0204ffff:M1460:
+   P2:B11013:F0x12:W64240:O0204ffff:M1460:
+   P3:B00000:F0x00:W0:O0:M0
+   P4:191004_7_p=80R
+"
+"209654","","","None","sunstone.in","tcp","0","OS Fingerprints Detected","Multiple OS fingerprints were detected.","Using a combination of remote probes (TCP/IP, SMB, HTTP, NTP, SNMP, etc), 
+it was possible to gather one or more fingerprints from the remote system. 
+While the highest-confidence result was reported in plugin 11936, “OS Identification”, 
+the complete set of fingerprints detected are reported here.","n/a","","
+Following OS Fingerprints were found
+
+Following fingerprints could not be used to determine OS : 
+ SinFP:!:
+   P1:B11013:F0x12:W64240:O0204ffff:M1460:
+   P2:B11013:F0x12:W64240:O0204ffff:M1460:
+   P3:B00000:F0x00:W0:O0:M0
+   P4:191004_7_p=80R
+"
