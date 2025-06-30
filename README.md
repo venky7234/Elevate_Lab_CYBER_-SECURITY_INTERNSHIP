@@ -89,3 +89,28 @@ Removed Telnet block rule:
 
 sudo ufw delete [22]
 
+Day-5
+Wireshark Packet Capture Task
+ Objective
+Capture and analyze network traffic using Wireshark to identify common protocols and understand packet-level communication.
+
+ Tools Used
+OS: Kali Linux
+
+Tool: Wireshark
+
+ Task Summary
+Installed Wireshark using APT.
+
+Started live capture on the active network interface.
+
+Generated traffic by browsing a website and pinging a server.
+
+Stopped the capture after one minute.
+
+Applied filters: dns, http, tcp.
+
+Identified protocols: DNS, TCP, HTTP.
+
+Exported capture as my_capture.pcap.
+
