@@ -57,3 +57,35 @@ Reviewed the report and noted vulnerabilities by severity.
 Researched and documented simple fixes for the most critical issues.
 
 Captured screenshots of key scan results and exported the report in csv format.
+
+Day-4
+ Task 4: Firewall Setup using UFW on Kali Linux
+ Objective
+Configure and test firewall rules using UFW (Uncomplicated Firewall) to understand traffic filtering and improve basic firewall skills.
+
+ Tools Used
+OS: Kali Linux
+
+Firewall Tool: UFW
+
+ Steps Summary
+Installed and enabled UFW:
+
+
+sudo apt install ufw -y  
+sudo ufw enable
+Checked existing rules:
+
+sudo ufw status verbose
+Blocked Telnet (port 23):
+
+sudo ufw deny 23
+Tested port block using Telnet and Netcat.
+
+Allowed SSH (port 22):
+sudo ufw allow 22
+Removed Telnet block rule:
+
+
+sudo ufw delete [22]
+
