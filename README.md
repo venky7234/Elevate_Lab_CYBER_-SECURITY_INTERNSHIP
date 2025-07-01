@@ -114,3 +114,13 @@ Identified protocols: DNS, TCP, HTTP.
 
 Exported capture as my_capture.pcap.
 
+Day-6
+Task -6
+
+I created and tested multiple passwords using various complexity levels.
+Each password was evaluated with an online password checker.
+I recorded scores and feedback to identify best practices.
+I learned that password strength increases with length, variety, and unpredictability.
+I also researched brute force and dictionary attacks, realizing how vital password complexity is in defending against them.
+https://www.security.org/how-secure-is-my-password/
+I am check my passwords in this site and analyse the time required to crack the password.
